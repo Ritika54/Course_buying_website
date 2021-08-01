@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<title>PRODUCTS</title>
+		<style type="text/css">
+		.dropdown-item{
+			color: #ffc107;
+		}
+		.dropdown-item : hover{
+			color: black;
+		}
+		.bggg{
+			background: black;
+		}
+		
+
+	</style>
+</head>
+<body class="bg-warning">
+	<div class="container-fluid">
+
+
+<!--NAVBAR START-->
+		<div class="row bg-dark">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				<nav class="navbar navbar-expand-sm navbar-dark">
+					  <!-- Brand/logo -->
+  						<a class="navbar-brand" href="#">
+    							<img src="images/download.jpg" alt="logo" style="width:40px;">
+  						</a>
+						<div class="navbar-header">
+      							<a class="navbar-brand text-warning" href="index.html">Course Shop</a>
+    					</div>
+    					<!-- Toggler/collapsibe Button -->
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="collapsibleNavbar">
+							<ul class="navbar-nav">
+							    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+							    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+							    <li class="nav-item active"><a href="product.html" class="nav-link">Product</a></li>
+							</ul>
+						</div>
+
+						<div class="dropdown">
+						    <button type="button" class="btn btn-dark text-light dropdown-toggle navbar-btn navbar-right font-weight-bold" data-toggle="dropdown">
+						      Account
+						    </button>
+						    <div class="dropdown-menu bg-dark">
+									<button type="button" class="dropdown-item font-weight-bold" data-toggle="modal" data-target="#myModal">Login</button>      
+									<button type="button" class="dropdown-item font-weight-bold" data-toggle="modal" data-target="#myModal2">Register</button>      
+						    </div>
+						</div>
+						
+  				</nav>
+
+			</div>
+		</div>
+
+ <!-- NAVBAR END -->
+
+<!-- LOGIN MODAL -->
+<!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content bggg">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title font-weight-bold text-light">MEMBER LOGIN</h4>
+          <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <form>
+        	<div class="input-group bg-light border border-light mt-2 p-2 pb-1">
+        		<div class="input-group-addon" ><i class="fa fa-envelope" style="font-size: 24px;"></i></div>
+        			<input type="email" name="" placeholder="Email Id" class="form-control" id="email">     	
+        	</div>
+        	<div class="input-group bg-light border border-light mt-2 p-2 pb-1">
+        		<div class="input-group-addon" ><i class="fa fa-lock" style="font-size: 24px;"></i></div>
+        		<input type="password" name="" placeholder="Password" class="form-control" id="pwd">
+        	</div>
+        	<div class="input-group bg-light border border-light mt-2 p-2 pb-1">
+        		<input type="text" name="" placeholder="R%!l9$" class="form-control" disabled="disabled" readonly="readonly">
+        	</div>
+        	<div class="input-group bg-light border border-light mt-2 p-2 pb-1">
+        		<input type="text" name="" placeholder="Captcha" class="form-control">
+        	</div>
+        	<div class="input-group form-check p-2 pb-1 text-light">
+        		<input type="checkbox" name="" style="height: 15px;width: 15px;">&nbsp;&nbsp;Remember me
+        	</div>
+        	<button type="Submit" class="btn btn-success" style="width:100%;">Submit</button>
+        </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a href="#" class="text-right">Forgot Password ?</a>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+<!-- LOGIN MODAL END -->
+
+<!-- REGISTER MODAL START -->
+<!-- The Modal -->
+  <div class="modal fade" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content bggg">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title font-weight-bold text-light">MEMBER REGISTRATION</h4>
+          <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <form>
+        	<div class="input-group bg-light border border-light p-2 pb-1" >
+        		<div class="input-group-addon"><i class="fa" style="font-size: 24px;"></i></div>
+        		<input type="text" class="form-control" placeholder="Username" >
+			</div>
+        	<div class="input-group bg-light border border-light mt-2 p-2 pb-1">
+        		<div class="input-group-addon" ><i class="fa fa-envelope" style="font-size: 24px;"></i></div>
+        			<input type="email" name="" placeholder="Email Id" class="form-control" id="email">     	
+        	</div>
+        	<div class="input-group bg-light border border-light mt-2 p-2 pb-1">
+        		<div class="input-group-addon" ><i class="fa fa-lock" style="font-size: 24px;"></i></div>
+        		<input type="password" name="" placeholder="Password" class="form-control" id="pwd">
+        	</div>
+        	<div class="input-group bg-light border border-light mt-2 p-2 pb-1">
+        		<div class="input-group-addon" ><i class="fa fa-lock" style="font-size: 24px;"></i></div>
+        		<input type="password" name="" placeholder="Confirm Password" class="form-control" id="pwd">
+        	</div>
+        	<div class="input-group form-check p-2 pb-1 text-light">
+        		<input type="checkbox" name="" style="height: 15px;width: 15px;">&nbsp;&nbsp;Agree with our <a href="#"> Terms and Condition</a>
+        	</div>
+        	<button type="Submit" class="btn btn-success" style="width:100%;">Register</button>
+        </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a href="#" class="text-right">Terms and Condition</a>
+        </div>
+        
+      </div>
+    </div>
+</div>
+<!-- REGISTER MODAL START END -->
+
+<!-- PRODUCT CARDS  -->
+<!-- ROW 1 -->
+<div class="row">
+  <!-- CARD 1 -->
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-1">
+    <div class="card">
+    <img class="card-img-top p-2" src="images/1.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">HTML COURSE</h4>
+      <p class="card-text">$20</p>
+      <a href="#" class="btn btn-success" data-trigger="focus" data-toggle="popover" title="HTML COURSE" data-content="Added to card">Add to cart</a>
+
+    </div>
+  </div>
+  </div>
+<!-- CARD 1 END -->
+
+  <!-- CARD 2 -->
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-1">
+    <div class="card">
+    <img class="card-img-top p-2" src="images/2.jpg" alt="Card image" style="width:100%;">
+    <div class="card-body">
+      <h4 class="card-title">CSS COURSE</h4>
+      <p class="card-text">$10</p>
+      <a href="#" class="btn btn-success" data-trigger="focus" data-toggle="popover" title="CSS COURSE" data-content="Added to card">Add to cart</a>
+      
+    </div>
+  </div>
+  </div>
+<!-- CARD 2 END -->
+
+  <!-- CARD 3 -->
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-1">
+    <div class="card">
+    <img class="card-img-top p-2" src="images/3.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Bootstrap COURSE</h4>
+      <p class="card-text">$30</p>
+      <a href="#" class="btn btn-success" data-trigger="focus" data-toggle="popover" title="Bootstrap COURSE" data-content="Added to card">Add to cart</a>
+      
+    </div>
+  </div>
+  </div>
+<!-- CARD 3 END -->
+  <!-- CARD 4 -->
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-1">
+    <div class="card">
+    <img class="card-img-top p-2" src="images/1.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">HTML COURSE</h4>
+      <p class="card-text">$20</p>
+      <a href="#" class="btn btn-success" data-trigger="focus" data-toggle="popover" title="HTML COURSE" data-content="Added to card">Add to cart</a>
+
+    </div>
+  </div>
+  </div>
+<!-- CARD 4 END -->
+
+  <!-- CARD 5 -->
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-1">
+    <div class="card">
+    <img class="card-img-top p-2" src="images/2.jpg" alt="Card image" style="width:100%;">
+    <div class="card-body">
+      <h4 class="card-title">CSS COURSE</h4>
+      <p class="card-text">$10</p>
+      <a href="#" class="btn btn-success" data-trigger="focus" data-toggle="popover" title="CSS COURSE" data-content="Added to card">Add to cart</a>
+      
+    </div>
+  </div>
+  </div>
+<!-- CARD 5 END -->
+
+  <!-- CARD 6 -->
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-1">
+    <div class="card">
+    <img class="card-img-top p-2" src="images/3.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Bootstrap COURSE</h4>
+      <p class="card-text">$30</p>
+      <a href="#" class="btn btn-success" data-trigger="focus" data-toggle="popover" title="Bootstrap COURSE" data-content="Added to card">Add to cart</a>
+      
+    </div>
+  </div>
+  </div>
+<!-- CARD 6 END -->
+</div>
+<!-- Row1 END -->
+</div>
+<script>
+//POPOVER ADDTOCART  
+  $(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+
+</script>
+</body>
+</html>
